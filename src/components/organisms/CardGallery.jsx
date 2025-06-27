@@ -94,9 +94,9 @@ const CardGallery = () => {
             <Card className="p-6 space-y-6" gradient>
               <LoyaltyCardPreview card={card} size="md" />
               
-              <div className="space-y-4">
+<div className="space-y-4">
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{card.name}</h3>
+                  <h3 className="text-lg font-semibold text-white mb-2">{card.name || card.Name}</h3>
                   <p className="text-gray-400 text-sm line-clamp-2">{card.description}</p>
                 </div>
                 

@@ -38,8 +38,8 @@ const CustomerList = () => {
       return;
     }
 
-    const filtered = customers.filter(customer =>
-      customer.name.toLowerCase().includes(query.toLowerCase()) ||
+const filtered = customers.filter(customer =>
+      (customer.Name || customer.name || '').toLowerCase().includes(query.toLowerCase()) ||
       customer.email.toLowerCase().includes(query.toLowerCase()) ||
       customer.phone.includes(query)
     );
@@ -118,13 +118,13 @@ const CustomerList = () => {
                   >
                     <td className="p-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
+<div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
                           <span className="text-white font-semibold text-sm">
-                            {customer.name.charAt(0).toUpperCase()}
+                            {(customer.Name || customer.name || 'U').charAt(0).toUpperCase()}
                           </span>
                         </div>
                         <div>
-                          <p className="font-medium text-white">{customer.name}</p>
+                          <p className="font-medium text-white">{customer.Name || customer.name}</p>
                           <p className="text-sm text-gray-400">{customer.email}</p>
                         </div>
                       </div>

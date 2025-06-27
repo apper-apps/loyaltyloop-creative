@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import ApperIcon from '@/components/ApperIcon';
-
+import { AuthContext } from '@/App';
 const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
@@ -97,8 +97,8 @@ const Sidebar = () => {
         ))}
       </nav>
 
-      {/* User Section */}
-      <div className="p-4 border-t border-white/10">
+{/* User Section */}
+      <div className="p-4 border-t border-white/10 space-y-2">
         <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors cursor-pointer">
           <div className="w-8 h-8 bg-gradient-to-br from-accent-500 to-accent-600 rounded-full flex items-center justify-center">
             <ApperIcon name="User" size={16} className="text-white" />
@@ -119,8 +119,40 @@ const Sidebar = () => {
             )}
           </AnimatePresence>
         </div>
+        
+        <LogoutButton collapsed={collapsed} />
       </div>
     </motion.div>
+  );
+};
+
+// Logout Button Component
+const LogoutButton = ({ collapsed }) => {
+  const { logout } = useContext(AuthContext);
+  
+  return (
+    <motion.button
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      onClick={logout}
+      className="w-full flex items-center gap-3 px-3 py-3 rounded-lg transition-all duration-200 text-gray-400 hover:text-white hover:bg-red-500/10 border border-red-500/20 hover:border-red-500/40"
+    >
+      <ApperIcon name="LogOut" size={20} className="text-red-400" />
+      
+      <AnimatePresence mode="wait">
+        {!collapsed && (
+          <motion.span
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -10 }}
+            transition={{ duration: 0.2 }}
+            className="font-medium text-red-400"
+          >
+            Logout
+          </motion.span>
+        )}
+      </AnimatePresence>
+    </motion.button>
   );
 };
 

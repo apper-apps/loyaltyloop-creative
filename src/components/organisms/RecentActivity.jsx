@@ -103,9 +103,9 @@ const RecentActivity = () => {
                 </div>
                 
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
+<div className="flex items-center gap-2 mb-1">
                     <p className="font-medium text-white truncate">
-                      {customer?.name || 'Unknown Customer'}
+                      {customer?.Name || customer?.name || 'Unknown Customer'}
                     </p>
                     <span className={`text-sm font-semibold ${getActivityColor(transaction.type)}`}>
                       {transaction.type === 'earn' ? '+' : '-'}{Math.abs(transaction.points)} pts
