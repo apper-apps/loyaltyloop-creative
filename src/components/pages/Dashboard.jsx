@@ -5,7 +5,7 @@ import Card from '@/components/atoms/Card';
 import Button from '@/components/atoms/Button';
 import ApperIcon from '@/components/ApperIcon';
 import { useNavigate } from 'react-router-dom';
-
+import { toast } from 'react-toastify';
 const Dashboard = () => {
   const navigate = useNavigate();
 
@@ -125,7 +125,14 @@ const Dashboard = () => {
               Increase customer engagement by offering bonus points for referrals and social media shares. 
               This can boost your customer acquisition by up to 40%!
             </p>
-            <Button variant="secondary" size="sm">
+<Button 
+              variant="secondary" 
+              size="sm"
+              onClick={() => {
+                toast.info('Pro tips and tutorials coming soon!');
+                navigate('/analytics');
+              }}
+            >
               Learn More
             </Button>
           </div>

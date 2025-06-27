@@ -3,7 +3,7 @@ import Card from '@/components/atoms/Card';
 import Button from '@/components/atoms/Button';
 import Input from '@/components/atoms/Input';
 import ApperIcon from '@/components/ApperIcon';
-
+import { toast } from 'react-toastify';
 const Settings = () => {
   return (
     <motion.div
@@ -63,7 +63,9 @@ const Settings = () => {
               </div>
               
               <div className="flex justify-end">
-                <Button>Save Changes</Button>
+<Button onClick={() => toast.success('Business profile updated successfully!')}>
+                  Save Changes
+                </Button>
               </div>
             </div>
           </Card>
@@ -107,7 +109,9 @@ const Settings = () => {
               </div>
               
               <div className="flex justify-end">
-                <Button>Update Settings</Button>
+<Button onClick={() => toast.success('Loyalty program settings updated!')}>
+                  Update Settings
+                </Button>
               </div>
             </div>
           </Card>
@@ -119,7 +123,10 @@ const Settings = () => {
             <h2 className="text-lg font-semibold text-white mb-4">Quick Actions</h2>
             
             <div className="space-y-3">
-              <button className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors text-left">
+<button 
+                className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors text-left"
+                onClick={() => toast.info('Data export feature coming soon!')}
+              >
                 <div className="w-10 h-10 bg-primary-500/20 rounded-lg flex items-center justify-center">
                   <ApperIcon name="Download" size={18} className="text-primary-400" />
                 </div>
@@ -129,7 +136,10 @@ const Settings = () => {
                 </div>
               </button>
 
-              <button className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors text-left">
+<button 
+                className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors text-left"
+                onClick={() => toast.info('Email template editor coming soon!')}
+              >
                 <div className="w-10 h-10 bg-secondary-500/20 rounded-lg flex items-center justify-center">
                   <ApperIcon name="Mail" size={18} className="text-secondary-400" />
                 </div>
@@ -139,7 +149,10 @@ const Settings = () => {
                 </div>
               </button>
 
-              <button className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors text-left">
+<button 
+                className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors text-left"
+                onClick={() => toast.info('Brand customization tools coming soon!')}
+              >
                 <div className="w-10 h-10 bg-accent-500/20 rounded-lg flex items-center justify-center">
                   <ApperIcon name="Palette" size={18} className="text-accent-400" />
                 </div>
@@ -201,7 +214,12 @@ const Settings = () => {
             <div className="text-center">
               <h3 className="text-2xl font-bold gradient-text mb-2">Pro Plan</h3>
               <p className="text-gray-300 mb-4">Unlimited cards & customers</p>
-              <Button variant="secondary" size="sm" className="w-full">
+<Button 
+                variant="secondary" 
+                size="sm" 
+                className="w-full"
+                onClick={() => toast.info('Subscription management coming soon!')}
+              >
                 Manage Subscription
               </Button>
             </div>

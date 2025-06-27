@@ -3,7 +3,7 @@ import Card from '@/components/atoms/Card';
 import Button from '@/components/atoms/Button';
 import Empty from '@/components/ui/Empty';
 import ApperIcon from '@/components/ApperIcon';
-
+import { toast } from 'react-toastify';
 const Campaigns = () => {
   const campaigns = []; // Empty for now - will be populated in future
 
@@ -19,7 +19,12 @@ const Campaigns = () => {
           <h1 className="text-3xl font-bold gradient-text mb-2">Marketing Campaigns</h1>
           <p className="text-gray-400">Create and manage promotional campaigns for your loyalty programs</p>
         </div>
-        <Button leftIcon="Plus">Create Campaign</Button>
+<Button 
+          leftIcon="Plus"
+          onClick={() => toast.info('Campaign creation feature coming soon!')}
+        >
+          Create Campaign
+        </Button>
       </div>
 
       {/* Campaign Types */}
@@ -30,7 +35,14 @@ const Campaigns = () => {
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">Bonus Points</h3>
           <p className="text-gray-400 text-sm mb-4">Offer extra points for specific actions or purchases</p>
-          <Button variant="secondary" size="sm" className="w-full">Create</Button>
+<Button 
+            variant="secondary" 
+            size="sm" 
+            className="w-full"
+            onClick={() => toast.info('Bonus Points campaign builder coming soon!')}
+          >
+            Create
+          </Button>
         </Card>
 
         <Card className="p-6 text-center hover:border-secondary-500/30 cursor-pointer transition-all">
@@ -39,7 +51,14 @@ const Campaigns = () => {
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">Referral Program</h3>
           <p className="text-gray-400 text-sm mb-4">Reward customers for bringing in new members</p>
-          <Button variant="secondary" size="sm" className="w-full">Create</Button>
+<Button 
+            variant="secondary" 
+            size="sm" 
+            className="w-full"
+            onClick={() => toast.info('Referral Program setup coming soon!')}
+          >
+            Create
+          </Button>
         </Card>
 
         <Card className="p-6 text-center hover:border-accent-500/30 cursor-pointer transition-all">
@@ -48,7 +67,14 @@ const Campaigns = () => {
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">Seasonal Offers</h3>
           <p className="text-gray-400 text-sm mb-4">Time-limited promotions for holidays and events</p>
-          <Button variant="secondary" size="sm" className="w-full">Create</Button>
+<Button 
+            variant="secondary" 
+            size="sm" 
+            className="w-full"
+            onClick={() => toast.info('Seasonal Offers creator coming soon!')}
+          >
+            Create
+          </Button>
         </Card>
       </div>
 
@@ -59,7 +85,7 @@ const Campaigns = () => {
           description="Create your first marketing campaign to boost customer engagement and drive more loyalty program participation."
           icon="Megaphone"
           actionLabel="Create Your First Campaign"
-          onAction={() => {}}
+onAction={() => toast.info('Campaign wizard launching soon!')}
         />
       ) : (
         <Card className="p-6">
