@@ -1,0 +1,80 @@
+[
+  {
+    "Id": 1,
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@email.com",
+    "phone": "+1 (555) 123-4567",
+    "cards": [1, 2],
+    "totalPoints": 450,
+    "joinDate": "2024-01-15",
+    "lastActivity": "2024-01-28",
+    "tier": "Gold",
+    "lifetimeSpent": 2500,
+    "visitCount": 18
+  },
+  {
+    "Id": 2,
+    "name": "Michael Chen",
+    "email": "m.chen@email.com",
+    "phone": "+1 (555) 234-5678",
+    "cards": [1, 3],
+    "totalPoints": 280,
+    "joinDate": "2024-01-18",
+    "lastActivity": "2024-01-27",
+    "tier": "Silver",
+    "lifetimeSpent": 1800,
+    "visitCount": 12
+  },
+  {
+    "Id": 3,
+    "name": "Emily Rodriguez",
+    "email": "emily.r@email.com",
+    "phone": "+1 (555) 345-6789",
+    "cards": [2],
+    "totalPoints": 190,
+    "joinDate": "2024-01-22",
+    "lastActivity": "2024-01-29",
+    "tier": "Bronze",
+    "lifetimeSpent": 950,
+    "visitCount": 8
+  },
+  {
+    "Id": 4,
+    "name": "David Thompson",
+    "email": "david.thompson@email.com",
+    "phone": "+1 (555) 456-7890",
+    "cards": [1, 2, 3],
+    "totalPoints": 680,
+    "joinDate": "2024-01-12",
+    "lastActivity": "2024-01-30",
+    "tier": "Platinum",
+    "lifetimeSpent": 4200,
+    "visitCount": 25
+  },
+  {
+    "Id": 5,
+    "name": "Jessica Wang",
+    "email": "j.wang@email.com",
+    "phone": "+1 (555) 567-8901",
+    "cards": [3],
+    "totalPoints": 320,
+    "joinDate": "2024-01-25",
+    "lastActivity": "2024-01-29",
+    "tier": "Silver",
+    "lifetimeSpent": 1600,
+    "visitCount": 9
+  },
+  {
+    "Id": 6,
+    "name": "Robert Miller",
+    "email": "r.miller@email.com",
+    "phone": "+1 (555) 678-9012",
+    "cards": [1],
+    "totalPoints": 120,
+    "joinDate": "2024-01-28",
+    "lastActivity": "2024-01-30",
+    "tier": "Bronze",
+    "lifetimeSpent": 600,
+    "visitCount": 4
+  }
+]

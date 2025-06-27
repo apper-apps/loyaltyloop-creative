@@ -1,0 +1,131 @@
+[
+  {
+    "Id": 1,
+    "name": "Coffee Corner Rewards",
+    "businessName": "Coffee Corner",
+    "description": "Earn points with every coffee purchase and get free drinks!",
+    "design": {
+      "template": "coffee",
+      "primaryColor": "#8B4513",
+      "secondaryColor": "#D2691E",
+      "logo": "☕",
+      "backgroundPattern": "beans"
+    },
+    "pointsConfig": {
+      "pointsPerDollar": 10,
+      "bonusThreshold": 100,
+      "bonusPoints": 20
+    },
+    "rewards": [
+      {
+        "id": "r1",
+        "name": "Free Small Coffee",
+        "pointsCost": 100,
+        "description": "Get a free small coffee of your choice"
+      },
+      {
+        "id": "r2",
+        "name": "Free Pastry",
+        "pointsCost": 150,
+        "description": "Choose any pastry from our selection"
+      },
+      {
+        "id": "r3",
+        "name": "Free Large Coffee",
+        "pointsCost": 200,
+        "description": "Upgrade to a large coffee for free"
+      }
+    ],
+    "status": "active",
+    "createdDate": "2024-01-15",
+    "totalCustomers": 145,
+    "totalPoints": 12450,
+    "redemptions": 28
+  },
+  {
+    "Id": 2,
+    "name": "Pizza Palace VIP",
+    "businessName": "Pizza Palace",
+    "description": "VIP rewards for pizza lovers - earn points and get free meals!",
+    "design": {
+      "template": "restaurant",
+      "primaryColor": "#DC2626",
+      "secondaryColor": "#F59E0B",
+      "logo": "🍕",
+      "backgroundPattern": "circles"
+    },
+    "pointsConfig": {
+      "pointsPerDollar": 5,
+      "bonusThreshold": 200,
+      "bonusPoints": 50
+    },
+    "rewards": [
+      {
+        "id": "r4",
+        "name": "Free Personal Pizza",
+        "pointsCost": 250,
+        "description": "Any personal pizza from our menu"
+      },
+      {
+        "id": "r5",
+        "name": "Free Appetizer",
+        "pointsCost": 150,
+        "description": "Choose any appetizer"
+      },
+      {
+        "id": "r6",
+        "name": "Free Family Meal",
+        "pointsCost": 500,
+        "description": "Large pizza + 2 sides + drinks"
+      }
+    ],
+    "status": "active",
+    "createdDate": "2024-01-10",
+    "totalCustomers": 89,
+    "totalPoints": 8940,
+    "redemptions": 15
+  },
+  {
+    "Id": 3,
+    "name": "Fashion Forward",
+    "businessName": "Trendy Boutique",
+    "description": "Exclusive rewards for fashion enthusiasts",
+    "design": {
+      "template": "fashion",
+      "primaryColor": "#EC4899",
+      "secondaryColor": "#8B5CF6",
+      "logo": "👗",
+      "backgroundPattern": "geometric"
+    },
+    "pointsConfig": {
+      "pointsPerDollar": 2,
+      "bonusThreshold": 500,
+      "bonusPoints": 100
+    },
+    "rewards": [
+      {
+        "id": "r7",
+        "name": "10% Off Purchase",
+        "pointsCost": 100,
+        "description": "10% discount on your next purchase"
+      },
+      {
+        "id": "r8",
+        "name": "Free Accessory",
+        "pointsCost": 300,
+        "description": "Choose any accessory under $50"
+      },
+      {
+        "id": "r9",
+        "name": "20% Off Purchase",
+        "pointsCost": 500,
+        "description": "20% discount on your entire purchase"
+      }
+    ],
+    "status": "active",
+    "createdDate": "2024-01-20",
+    "totalCustomers": 67,
+    "totalPoints": 6780,
+    "redemptions": 12
+  }
+]

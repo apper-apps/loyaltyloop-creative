@@ -1,0 +1,81 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-white font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 bg-clip-text text-transparent;
+  }
+  
+  .card-shadow {
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.12), 0 2px 16px rgba(139, 92, 246, 0.08);
+  }
+  
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shimmer::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 2s infinite;
+    content: '';
+  }
+}
+
+/* Toast Customization */
+.Toastify__toast-container {
+  width: 320px;
+}
+
+.Toastify__toast {
+  @apply bg-surface border border-white/10 text-white rounded-lg;
+  min-height: 48px;
+  padding: 12px 16px;
+  font-family: Inter, sans-serif;
+}
+
+.Toastify__toast--success {
+  @apply border-green-500/30;
+}
+
+.Toastify__toast--error {
+  @apply border-red-500/30;
+}
+
+.Toastify__toast--info {
+  @apply border-blue-500/30;
+}
+
+.Toastify__toast--warning {
+  @apply border-yellow-500/30;
+}
+
+.Toastify__progress-bar {
+  @apply bg-gradient-to-r from-primary-500 to-secondary-500;
+}

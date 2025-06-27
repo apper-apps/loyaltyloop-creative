@@ -1,0 +1,80 @@
+[
+  {
+    "Id": 1,
+    "customerId": 1,
+    "cardId": 1,
+    "type": "earn",
+    "points": 50,
+    "amount": 25.00,
+    "description": "Coffee purchase",
+    "timestamp": "2024-01-30T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "customerId": 1,
+    "cardId": 1,
+    "type": "redeem",
+    "points": -100,
+    "description": "Free Small Coffee",
+    "timestamp": "2024-01-29T14:15:00Z"
+  },
+  {
+    "Id": 3,
+    "customerId": 2,
+    "cardId": 2,
+    "type": "earn",
+    "points": 35,
+    "amount": 42.00,
+    "description": "Pizza order",
+    "timestamp": "2024-01-29T19:45:00Z"
+  },
+  {
+    "Id": 4,
+    "customerId": 3,
+    "cardId": 2,
+    "type": "earn",
+    "points": 25,
+    "amount": 30.00,
+    "description": "Pizza purchase",
+    "timestamp": "2024-01-28T18:20:00Z"
+  },
+  {
+    "Id": 5,
+    "customerId": 4,
+    "cardId": 3,
+    "type": "earn",
+    "points": 80,
+    "amount": 160.00,
+    "description": "Fashion purchase",
+    "timestamp": "2024-01-28T16:30:00Z"
+  },
+  {
+    "Id": 6,
+    "customerId": 4,
+    "cardId": 1,
+    "type": "earn",
+    "points": 40,
+    "amount": 20.00,
+    "description": "Coffee order",
+    "timestamp": "2024-01-27T09:15:00Z"
+  },
+  {
+    "Id": 7,
+    "customerId": 5,
+    "cardId": 3,
+    "type": "redeem",
+    "points": -100,
+    "description": "10% Off Purchase",
+    "timestamp": "2024-01-26T15:00:00Z"
+  },
+  {
+    "Id": 8,
+    "customerId": 2,
+    "cardId": 1,
+    "type": "earn",
+    "points": 30,
+    "amount": 15.00,
+    "description": "Coffee purchase",
+    "timestamp": "2024-01-25T11:45:00Z"
+  }
+]
